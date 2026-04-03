@@ -200,8 +200,8 @@
 
             <!-- Mobile Menu Button -->
             <button id="mobile-menu-btn"
-                class="md:hidden text-white p-2 focus:outline-none flex items-center justify-center">
-                <span class="material-symbols-outlined text-3xl">menu</span>
+                class="md:hidden text-white w-10 h-10 rounded-full bg-gradient-to-br from-orange-400 via-orange-500 to-orange-700 shadow-[0_0_15px_rgba(255,159,74,0.5)] focus:outline-none flex items-center justify-center transition-transform hover:scale-105 active:scale-95">
+                <span class="material-symbols-outlined text-white text-xl">menu</span>
             </button>
         </div>
     </nav>
@@ -209,8 +209,9 @@
     <!-- Mobile Menu Overlay -->
     <div id="mobile-menu-overlay"
         class="fixed inset-0 z-[60] bg-black/95 backdrop-blur-2xl flex flex-col items-center justify-center pointer-events-none md:hidden transition-all duration-500">
-        <button id="close-menu-btn" class="absolute top-8 right-8 text-white p-2">
-            <span class="material-symbols-outlined text-4xl">close</span>
+        <button id="close-menu-btn"
+            class="absolute top-6 right-6 w-10 h-10 rounded-full bg-gradient-to-br from-orange-400 via-orange-500 to-orange-700 shadow-[0_0_15px_rgba(255,159,74,0.5)] flex items-center justify-center transition-transform hover:scale-105 active:scale-95 text-white">
+            <span class="material-symbols-outlined text-white text-xl">close</span>
         </button>
         <div class="flex flex-col items-center gap-8 text-center px-6 w-full">
             <div class="text-sm font-black text-primary tracking-[0.4em] uppercase mb-4">Navigation</div>
@@ -254,33 +255,33 @@
             </div>
         </div>
 
-        <div class="relative z-10 text-center px-6 max-w-5xl mx-auto">
-            <h1 class="text-5xl md:text-[7rem] font-bold tracking-tight mb-4 text-white uppercase drop-shadow-2xl">
+        <div class="relative z-10 text-center px-[20px] max-w-5xl mx-auto">
+            <h1 id="hero-title" class="text-[36px] font-[900] md:text-[7rem] md:font-bold tracking-tight mb-[16px] text-white uppercase drop-shadow-2xl opacity-0 leading-[1.2]">
                 Amira Ashraf
             </h1>
 
-            <div class="mb-8">
-                <span class="text-[#ff9f4a] font-black tracking-[0.25em] uppercase text-xl md:text-2xl">
+            <div class="mb-[16px] md:mb-8 text-center flex flex-col">
+                <span id="hero-subtitle" class="text-[#ff9f4a] font-black tracking-[0.25em] uppercase text-[12px] md:text-2xl opacity-0 block">
                     Content Strategist | Copywriter & Scriptwriter
                 </span>
             </div>
 
-            <p class="text-lg md:text-xl text-white/90 font-medium mb-12 max-w-3xl mx-auto tracking-wide">
+            <p class="text-[15px] leading-[1.7] md:text-xl text-white/90 font-medium mb-[16px] md:mb-12 max-w-3xl mx-auto tracking-wide">
                 Turning clear strategy into <span
                     class="font-black text-white underline decoration-[#ff9f4a] decoration-2 underline-offset-4">measurable
                     results</span>
             </p>
 
-            <div class="flex flex-col md:flex-row items-center justify-center gap-6">
-                <button
-                    class="bg-gradient-to-r from-orange-400 to-orange-600 text-white text-xl font-black px-12 py-4 rounded-full shadow-lg hover:scale-105 transition-all duration-300 uppercase tracking-widest">
+            <div class="flex flex-col md:flex-row items-center justify-center gap-[10px] md:gap-6 mt-[16px]">
+                <button id="hero-cv-btn"
+                    class="opacity-0 scale-50 translate-y-4 bg-gradient-to-r from-orange-400 to-orange-600 text-white text-[15px] md:text-xl font-black px-6 py-[12px] min-h-[44px] rounded-full shadow-lg hover:scale-105 transition-all duration-500 uppercase tracking-widest">
                     MY CV
                 </button>
 
-                <div class="flex gap-4">
+                <div class="flex flex-row flex-wrap justify-center gap-[10px] md:gap-4 w-full">
                     <!-- Instagram -->
                     <a href="https://www.instagram.com/2mera_ashraf?utm_source=qr&igsh=MjFhNGcxNWg1azNl" target="_blank"
-                        class="w-14 h-14 rounded-full border-2 border-orange-500/50 flex items-center justify-center bg-gradient-to-br from-orange-500/20 to-orange-900/40 text-white hover:bg-orange-600 hover:border-orange-400 transition-all duration-300 group">
+                        class="hero-social-icon opacity-0 scale-50 translate-y-4 w-12 h-12 md:w-14 md:h-14 rounded-full bg-gradient-to-br from-orange-400 via-orange-500 to-orange-700 shadow-[0_0_15px_rgba(255,159,74,0.5)] flex items-center justify-center text-white transition-all duration-500 hover:scale-110 group">
                         <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24">
                             <path
                                 d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.209-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
@@ -289,7 +290,7 @@
                     <!-- LinkedIn -->
                     <a href="https://www.linkedin.com/in/amira-ashraf-bb53b627b?utm_source=share_via&utm_content=profile&utm_medium=member_android"
                         target="_blank"
-                        class="w-14 h-14 rounded-full border-2 border-orange-500/50 flex items-center justify-center bg-gradient-to-br from-orange-500/20 to-orange-900/40 text-white hover:bg-orange-600 hover:border-orange-400 transition-all duration-300 group">
+                        class="hero-social-icon opacity-0 scale-50 translate-y-4 w-12 h-12 md:w-14 md:h-14 rounded-full bg-gradient-to-br from-orange-400 via-orange-500 to-orange-700 shadow-[0_0_15px_rgba(255,159,74,0.5)] flex items-center justify-center text-white transition-all duration-500 hover:scale-110 group">
                         <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
                             <path
                                 d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
@@ -297,7 +298,7 @@
                     </a>
                     <!-- Facebook -->
                     <a href="https://www.facebook.com/share/1CNZv1QGXf/" target="_blank"
-                        class="w-14 h-14 rounded-full border-2 border-orange-500/50 flex items-center justify-center bg-gradient-to-br from-orange-500/20 to-orange-900/40 text-white hover:bg-orange-600 hover:border-orange-400 transition-all duration-300 group">
+                        class="hero-social-icon opacity-0 scale-50 translate-y-4 w-12 h-12 md:w-14 md:h-14 rounded-full bg-gradient-to-br from-orange-400 via-orange-500 to-orange-700 shadow-[0_0_15px_rgba(255,159,74,0.5)] flex items-center justify-center text-white transition-all duration-500 hover:scale-110 group">
                         <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
                             <path
                                 d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
@@ -305,7 +306,7 @@
                     </a>
                     <!-- TikTok -->
                     <a href="https://www.tiktok.com/@amiraashraf912?_r=1&_t=ZS-94vrFMDwFQD" target="_blank"
-                        class="w-14 h-14 rounded-full border-2 border-orange-500/50 flex items-center justify-center bg-gradient-to-br from-orange-500/20 to-orange-900/40 text-white hover:bg-orange-600 hover:border-orange-400 transition-all duration-300 group">
+                        class="hero-social-icon opacity-0 scale-50 translate-y-4 w-12 h-12 md:w-14 md:h-14 rounded-full bg-gradient-to-br from-orange-400 via-orange-500 to-orange-700 shadow-[0_0_15px_rgba(255,159,74,0.5)] flex items-center justify-center text-white transition-all duration-500 hover:scale-110 group">
                         <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
                             <path
                                 d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" />
@@ -324,28 +325,28 @@
         </div>
     </section>
     <!-- About Me Section Redesign -->
-    <section id="about" class="py-24 px-8 relative bg-black overflow-hidden reveal">
+    <section id="about" class="py-[40px] px-[20px] md:py-24 md:px-8 relative bg-black overflow-hidden reveal">
         <!-- Subtle Background Glow -->
         <div
             class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-orange-600/5 blur-[120px] rounded-full pointer-events-none">
         </div>
 
-        <div class="max-w-4xl mx-auto relative z-10">
+        <div class="max-w-4xl mx-auto relative z-10 w-full">
             <!-- Main About Card -->
             <div
-                class="bg-zinc-900/40 backdrop-blur-2xl border border-white/5 rounded-[2.5rem] p-8 md:p-16 text-center mb-12 shadow-2xl relative group overflow-hidden reveal reveal-up">
+                class="bg-zinc-900/40 backdrop-blur-2xl border border-white/5 rounded-[2.5rem] p-[20px] md:p-16 w-full text-center mb-[16px] md:mb-12 shadow-2xl relative group overflow-hidden reveal reveal-up">
                 <!-- Top Light Edge -->
                 <div
                     class="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-orange-500/30 to-transparent">
                 </div>
 
-                <h2 class="text-5xl font-bold bg-white text-transparent bg-clip-text mb-2 tracking-tight">✨ About Me
+                <h2 class="text-[22px] text-center md:text-5xl font-bold bg-white text-transparent bg-clip-text mb-[16px] md:mb-2 tracking-tight">✨ About Me
                 </h2>
                 <div
-                    class="w-24 h-1 bg-gradient-to-r from-transparent via-orange-500 to-transparent mx-auto mb-10 shadow-[0_0_15px_rgba(255,159,74,0.5)]">
+                    class="w-24 h-1 bg-gradient-to-r from-transparent via-orange-500 to-transparent mx-auto mb-[16px] md:mb-10 shadow-[0_0_15px_rgba(255,159,74,0.5)]">
                 </div>
 
-                <div class="space-y-8 text-xl md:text-2xl text-zinc-400 leading-relaxed font-medium">
+                <div class="space-y-[12px] md:space-y-8 text-[15px] leading-[1.7] md:text-2xl text-zinc-400 font-medium">
                     <p>
                         I’m <span class="text-white font-bold">Mera Ashraf</span>, a <span
                             class="text-[#ff9f4a] font-bold">Content Strategist & Copywriter</span>. I started my
@@ -370,44 +371,42 @@
             </div>
 
             <!-- Stat Cards Row -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="flex flex-row md:grid md:grid-cols-3 gap-[10px] md:gap-6 w-full items-stretch">
                 <!-- Stat 1 -->
-                <div class="relative group h-40 reveal reveal-up delay-200">
+                <div class="relative group flex-1 min-w-0 h-auto md:h-40 reveal reveal-up delay-200">
                     <div
-                        class="absolute inset-0 bg-gradient-to-br from-orange-500/20 via-transparent to-orange-500/5 rounded-3xl p-[1px]">
+                        class="h-full bg-gradient-to-br from-orange-500/20 via-transparent to-orange-500/5 rounded-[12px] md:rounded-3xl p-[1px]">
                         <div class="absolute inset-0 bg-zinc-950 rounded-[inherit]"></div>
                         <div
-                            class="relative h-full flex flex-col items-center justify-center text-center p-6 rounded-[inherit]">
-                            <span class="text-4xl font-black text-white mb-2 tracking-tighter">2023</span>
-                            <span class="text-xs uppercase tracking-[0.2em] text-zinc-500 font-bold">Graduation
-                                Year</span>
+                            class="relative h-full flex flex-col items-center justify-center text-center py-[16px] px-[4px] md:p-6 rounded-[inherit]">
+                            <span class="text-[24px] md:text-4xl font-black text-white mb-2 md:mb-2 tracking-tighter leading-none">2023</span>
+                            <span class="text-[11px] md:text-xs uppercase tracking-normal md:tracking-[0.2em] text-zinc-500 font-bold whitespace-normal md:whitespace-nowrap leading-tight">Graduation<br>Year</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Stat 2 -->
-                <div class="relative group h-40 reveal reveal-up delay-300">
+                <div class="relative group flex-1 min-w-0 h-auto md:h-40 reveal reveal-up delay-300">
                     <div
-                        class="absolute inset-0 bg-gradient-to-t from-orange-400/40 via-transparent to-transparent rounded-3xl p-[1px]">
+                        class="h-full bg-gradient-to-t from-orange-400/40 via-transparent to-transparent rounded-[12px] md:rounded-3xl p-[1px]">
                         <div class="absolute inset-0 bg-zinc-950 rounded-[inherit]"></div>
                         <div
-                            class="relative h-full flex flex-col items-center justify-center text-center p-6 rounded-[inherit]">
-                            <span class="text-4xl font-black text-[#ff9f4a] mb-2 tracking-tighter">1/2024</span>
-                            <span class="text-xs uppercase tracking-[0.2em] text-zinc-500 font-bold">Career Start</span>
+                            class="relative h-full flex flex-col items-center justify-center text-center py-[16px] px-[4px] md:p-6 rounded-[inherit]">
+                            <span class="text-[24px] md:text-4xl font-black text-[#ff9f4a] mb-2 md:mb-2 tracking-tighter leading-none">1/2024</span>
+                            <span class="text-[11px] md:text-xs uppercase tracking-normal md:tracking-[0.2em] text-zinc-500 font-bold whitespace-normal md:whitespace-nowrap leading-tight">Career<br>Start</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Stat 3 -->
-                <div class="relative group h-40">
+                <div class="relative group flex-1 min-w-0 h-auto md:h-40 reveal reveal-up delay-400">
                     <div
-                        class="absolute inset-0 bg-gradient-to-bl from-orange-500/20 via-transparent to-orange-500/5 rounded-3xl p-[1px]">
+                        class="h-full bg-gradient-to-bl from-orange-500/20 via-transparent to-orange-500/5 rounded-[12px] md:rounded-3xl p-[1px]">
                         <div class="absolute inset-0 bg-zinc-950 rounded-[inherit]"></div>
                         <div
-                            class="relative h-full flex flex-col items-center justify-center text-center p-6 rounded-[inherit]">
-                            <span class="text-4xl font-black text-white mb-2 tracking-tighter">Very Good</span>
-                            <span class="text-xs uppercase tracking-[0.2em] text-zinc-500 font-bold">Academic
-                                Grade</span>
+                            class="relative h-full flex flex-col items-center justify-center text-center py-[16px] px-[4px] md:p-6 rounded-[inherit]">
+                            <span class="text-[24px] md:text-4xl font-black text-white mb-2 md:mb-2 tracking-tighter leading-none">V.Good</span>
+                            <span class="text-[11px] md:text-xs uppercase tracking-normal md:tracking-[0.2em] text-zinc-500 font-bold whitespace-normal md:whitespace-nowrap leading-tight">Academic<br>Grade</span>
                         </div>
                     </div>
                 </div>
@@ -416,109 +415,145 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-24 px-8 bg-zinc-950 relative overflow-hidden reveal">
+    <section id="services" class="py-[40px] px-[20px] md:py-24 md:px-8 bg-[#050505] relative overflow-hidden reveal">
+        <!-- Top glowing light effect matching the image -->
         <div
-            class="absolute top-0 right-0 w-[500px] h-[500px] bg-orange-600/5 blur-[100px] rounded-full pointer-events-none">
+            class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[800px] h-32 md:h-64 bg-gradient-to-b from-orange-600/20 to-transparent blur-[80px] pointer-events-none">
         </div>
 
-        <div class="max-w-7xl mx-auto relative z-10">
-            <div class="flex flex-col items-center mb-16 text-center">
-                <h2 class="text-xs font-black tracking-[0.4em] text-primary mb-4 uppercase">My Expertise</h2>
-                <h3 class="text-4xl md:text-5xl font-black text-white mb-6 uppercase tracking-tight">✨ Services</h3>
-                <div
-                    class="h-1.5 w-24 bg-gradient-to-r from-orange-400 to-orange-600 rounded-full shadow-[0_0_20px_rgba(255,159,74,0.4)]">
-                </div>
+        <div class="max-w-6xl mx-auto relative z-10 w-full">
+            <div class="flex flex-col items-center mb-[16px] md:mb-16 text-center w-full">
+                <h2
+                    class="text-[22px] md:text-[2.75rem] font-bold text-white mb-[16px] md:mb-4 uppercase tracking-wide font-sans shadow-black drop-shadow-lg">
+                    My Services</h2>
+                <p class="text-zinc-300 text-[13px] leading-[1.7] md:text-lg max-w-2xl mx-auto tracking-wide font-medium">
+                    I approach every project with clarity and intention across the services I offer.
+                </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Content Strategy -->
+            <div class="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-4 gap-[16px] md:gap-6 w-full">
+                <!-- Content Strategy & Planning -->
                 <div
-                    class="bg-zinc-900/40 border border-white/5 rounded-3xl p-8 hover:border-primary/30 transition-all duration-500 group relative overflow-hidden reveal reveal-up delay-100">
-                    <div
-                        class="absolute -right-4 -top-4 w-24 h-24 bg-primary/10 rounded-full blur-2xl group-hover:bg-primary/20 transition-colors">
+                    class="rounded-3xl p-[1px] bg-gradient-to-b from-orange-500/70 via-zinc-800/50 to-zinc-900/50 hover:from-orange-400 hover:to-zinc-800 transition-all duration-500 group reveal reveal-up delay-100 shadow-lg relative overflow-hidden w-full">
+                    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-1 bg-orange-400 blur-[2px] opacity-70">
                     </div>
-                    <span class="material-symbols-outlined text-primary text-4xl mb-6 block">strategy</span>
-                    <h4 class="text-white text-xl font-bold mb-4">Content Strategy & Planning</h4>
-                    <ul class="text-zinc-400 space-y-2 text-sm">
-                        <li>• Content Strategy Development</li>
-                        <li>• Content Planning & Calendar</li>
-                        <li>• Market Research & Competitor Analysis</li>
-                    </ul>
+                    <div
+                        class="h-full bg-[#121212] rounded-[23px] p-[20px] sm:p-8 flex flex-col items-center text-center relative z-10 w-full">
+                        <div
+                            class="w-[40px] h-[40px] md:w-16 md:h-16 rounded-full bg-gradient-to-br from-orange-400 via-orange-500 to-orange-700 flex flex-col items-center justify-center mb-[12px] md:mb-6 shadow-[0_0_15px_rgba(255,159,74,0.5)] transition-transform duration-300 group-hover:scale-110">
+                            <span class="material-symbols-outlined text-white text-[20px] md:text-3xl">strategy</span>
+                        </div>
+                        <h4
+                            class="text-white text-[16px] md:text-lg font-bold mb-[8px] md:mb-4 tracking-wide leading-tight text-center">
+                            Content Strategy<br>& Planning</h4>
+                        <div
+                            class="text-[#a1a1aa] text-[13px] leading-[1.7] md:text-sm space-y-[4px] md:space-y-2 flex-grow flex flex-col justify-start w-full text-center">
+                            <p>Content Strategy Development</p>
+                            <p>Content Planning & Calendar</p>
+                            <p>Market Research & Competitor Analysis</p>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Content Creation -->
+                <!-- Copywriting & Scriptwriting -->
                 <div
-                    class="bg-zinc-900/40 border border-white/5 rounded-3xl p-8 hover:border-primary/30 transition-all duration-500 group relative overflow-hidden reveal reveal-up delay-200">
-                    <div
-                        class="absolute -right-4 -top-4 w-24 h-24 bg-primary/10 rounded-full blur-2xl group-hover:bg-primary/20 transition-colors">
+                    class="rounded-3xl p-[1px] bg-gradient-to-b from-orange-500/70 via-zinc-800/50 to-zinc-900/50 hover:from-orange-400 hover:to-zinc-800 transition-all duration-500 group reveal reveal-up delay-200 shadow-lg relative overflow-hidden w-full">
+                    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-1 bg-orange-400 blur-[2px] opacity-70">
                     </div>
-                    <span class="material-symbols-outlined text-primary text-4xl mb-6 block">edit_note</span>
-                    <h4 class="text-white text-xl font-bold mb-4">Copywriting & Scriptwriting</h4>
-                    <ul class="text-zinc-400 space-y-2 text-sm">
-                        <li>• Copywriting & Content Writing</li>
-                        <li>• Scriptwriting (Reels – YouTube – Podcasts)</li>
-                        <li>• Branding Messaging</li>
-                    </ul>
+                    <div
+                        class="h-full bg-[#121212] rounded-[23px] p-[20px] sm:p-8 flex flex-col items-center text-center relative z-10 w-full">
+                        <div
+                            class="w-[40px] h-[40px] md:w-16 md:h-16 rounded-full bg-gradient-to-br from-orange-400 via-orange-500 to-orange-700 flex flex-col items-center justify-center mb-[12px] md:mb-6 shadow-[0_0_15px_rgba(255,159,74,0.5)] transition-transform duration-300 group-hover:scale-110">
+                            <span class="material-symbols-outlined text-white text-[20px] md:text-3xl">edit_note</span>
+                        </div>
+                        <h4
+                            class="text-white text-[16px] md:text-lg font-bold mb-[8px] md:mb-4 tracking-wide leading-tight text-center">
+                            Copywriting &<br>Scriptwriting</h4>
+                        <div
+                            class="text-[#a1a1aa] text-[13px] leading-[1.7] md:text-sm space-y-[4px] md:space-y-2 flex-grow flex flex-col justify-start w-full text-center">
+                            <p>Copywriting & Content Writing</p>
+                            <p>Scriptwriting (Reels – YouTube – Podcasts)</p>
+                            <p>Branding Messaging</p>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Visual Content -->
+                <!-- Creative Production -->
                 <div
-                    class="bg-zinc-900/40 border border-white/5 rounded-3xl p-8 hover:border-primary/30 transition-all duration-500 group relative overflow-hidden reveal reveal-up delay-300">
-                    <div
-                        class="absolute -right-4 -top-4 w-24 h-24 bg-primary/10 rounded-full blur-2xl group-hover:bg-primary/20 transition-colors">
+                    class="rounded-3xl p-[1px] bg-gradient-to-b from-orange-500/70 via-zinc-800/50 to-zinc-900/50 hover:from-orange-400 hover:to-zinc-800 transition-all duration-500 group reveal reveal-up delay-300 shadow-lg relative overflow-hidden w-full">
+                    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-1 bg-orange-400 blur-[2px] opacity-70">
                     </div>
-                    <span class="material-symbols-outlined text-primary text-4xl mb-6 block">videocam</span>
-                    <h4 class="text-white text-xl font-bold mb-4">Creative Production</h4>
-                    <ul class="text-zinc-400 space-y-2 text-sm">
-                        <li>• Campaign Ideas & Creative Concepts</li>
-                        <li>• Short-form & Long-form Content</li>
-                        <li>• Mobile Reels Shooting</li>
-                    </ul>
+                    <div
+                        class="h-full bg-[#121212] rounded-[23px] p-[20px] sm:p-8 flex flex-col items-center text-center relative z-10 w-full">
+                        <div
+                            class="w-[40px] h-[40px] md:w-16 md:h-16 rounded-full bg-gradient-to-br from-orange-400 via-orange-500 to-orange-700 flex flex-col items-center justify-center mb-[12px] md:mb-6 shadow-[0_0_15px_rgba(255,159,74,0.5)] transition-transform duration-300 group-hover:scale-110">
+                            <span class="material-symbols-outlined text-white text-[20px] md:text-3xl">videocam</span>
+                        </div>
+                        <h4
+                            class="text-white text-[16px] md:text-lg font-bold mb-[8px] md:mb-4 tracking-wide leading-tight text-center">
+                            Creative<br>Production</h4>
+                        <div
+                            class="text-[#a1a1aa] text-[13px] leading-[1.7] md:text-sm space-y-[4px] md:space-y-2 flex-grow flex flex-col justify-start w-full text-center">
+                            <p>Campaign Ideas & Creative Concepts</p>
+                            <p>Short-form & Long-form Content</p>
+                            <p>Mobile Reels Shooting</p>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Performance -->
+                <!-- Performance Analysis -->
                 <div
-                    class="bg-zinc-900/40 border border-white/5 rounded-3xl p-8 hover:border-primary/30 transition-all duration-500 group relative overflow-hidden md:col-span-2 lg:col-span-1 reveal reveal-up delay-400">
-                    <div
-                        class="absolute -right-4 -top-4 w-24 h-24 bg-primary/10 rounded-full blur-2xl group-hover:bg-primary/20 transition-colors">
+                    class="rounded-3xl p-[1px] bg-gradient-to-b from-orange-500/70 via-zinc-800/50 to-zinc-900/50 hover:from-orange-400 hover:to-zinc-800 transition-all duration-500 group reveal reveal-up delay-400 shadow-lg relative overflow-hidden w-full">
+                    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-1 bg-orange-400 blur-[2px] opacity-70">
                     </div>
-                    <span class="material-symbols-outlined text-primary text-4xl mb-6 block">analytics</span>
-                    <h4 class="text-white text-xl font-bold mb-4">Performance Analysis</h4>
-                    <p class="text-zinc-400 text-sm">Detailed tracking and analysis of content performance to optimize
-                        reach and engagement metrics across platforms.</p>
+                    <div
+                        class="h-full bg-[#121212] rounded-[23px] p-[20px] sm:p-8 flex flex-col items-center text-center relative z-10 w-full">
+                        <div
+                            class="w-[40px] h-[40px] md:w-16 md:h-16 rounded-full bg-gradient-to-br from-orange-400 via-orange-500 to-orange-700 flex flex-col items-center justify-center mb-[12px] md:mb-6 shadow-[0_0_15px_rgba(255,159,74,0.5)] transition-transform duration-300 group-hover:scale-110">
+                            <span class="material-symbols-outlined text-white text-[20px] md:text-3xl">analytics</span>
+                        </div>
+                        <h4
+                            class="text-white text-[16px] md:text-lg font-bold mb-[8px] md:mb-4 tracking-wide leading-tight text-center">
+                            Performance<br>Analysis</h4>
+                        <div
+                            class="text-[#a1a1aa] text-[13px] leading-[1.7] md:text-sm space-y-[4px] md:space-y-2 flex-grow flex flex-col justify-start w-full text-center">
+                            <p>Detailed tracking and analysis of content performance to optimize reach and engagement
+                                metrics across platforms.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Clients Section -->
-    <section id="clients" class="py-24 px-8 bg-black relative overflow-hidden reveal">
+    <section id="clients" class="py-[40px] px-[20px] md:py-24 md:px-8 bg-black relative overflow-hidden reveal">
         <div
             class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-orange-600/5 blur-[100px] rounded-full pointer-events-none">
         </div>
 
-        <div class="max-w-7xl mx-auto relative z-10">
-            <div class="flex flex-col items-center mb-16 text-center">
-                <h2 class="text-xs font-black tracking-[0.4em] text-primary mb-4 uppercase">Trust & Partnership</h2>
-                <h3 class="text-4xl md:text-5xl font-black text-white mb-6 uppercase tracking-tight">✨ Clients I've
+        <div class="max-w-7xl mx-auto relative z-10 w-full">
+            <div class="flex flex-col items-center mb-[16px] md:mb-16 text-center w-full">
+                <h2 class="text-[12px] font-black tracking-[0.2em] md:tracking-[0.4em] text-primary mb-[8px] md:mb-4 uppercase text-center w-full">Trust & Partnership</h2>
+                <h3 class="text-[22px] md:text-5xl font-black text-white mb-[16px] md:mb-6 uppercase tracking-tight text-center w-full">✨ Clients I've
                     Worked For</h3>
                 <div
-                    class="h-1.5 w-24 bg-gradient-to-r from-orange-400 to-orange-600 rounded-full shadow-[0_0_20px_rgba(255,159,74,0.4)]">
+                    class="h-[4px] md:h-1.5 w-24 bg-gradient-to-r from-orange-400 to-orange-600 rounded-full shadow-[0_0_20px_rgba(255,159,74,0.4)]">
                 </div>
             </div>
 
             <!-- Egyptian Market -->
-            <div class="mb-20">
-                <div class="flex items-center gap-4 mb-10">
+            <div class="mb-[32px] md:mb-20">
+                <div class="flex items-center gap-[10px] md:gap-4 mb-[16px] md:mb-10 w-full">
                     <div class="h-[1px] flex-grow bg-white/5"></div>
-                    <h4 class="text-xl font-bold text-[#ff9f4a] uppercase tracking-widest px-4">Egyptian Market | سوق
+                    <h4 class="text-[15px] md:text-xl font-bold text-[#ff9f4a] uppercase tracking-wider px-[4px] text-center">Egyptian Market | سوق
                         مصري</h4>
                     <div class="h-[1px] flex-grow bg-white/5"></div>
                 </div>
                 <div
-                    class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6 md:gap-10">
+                    class="grid grid-cols-4 gap-[10px] md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 md:gap-10 w-full">
                     <a href="https://www.facebook.com/share/1KacAHRqW6/" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -526,7 +561,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.facebook.com/share/1AsvrPfCRK/" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -534,7 +569,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.facebook.com/share/16zZYPEEeY" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -542,7 +577,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.facebook.com/share/1CYcHAhTkb/" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -550,7 +585,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.facebook.com/share/1AmpTNG6GS/" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -558,7 +593,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.facebook.com/share/1Dmew2f1L6/" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -566,7 +601,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.facebook.com/share/1J5egxxdGJ/" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -574,7 +609,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.facebook.com/share/1E896SeizW/" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -582,7 +617,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.facebook.com/share/17x9rS2zQV/" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -590,7 +625,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.facebook.com/share/1E8wsdHwQK/" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -598,7 +633,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.facebook.com/share/1Q93HAJVpR/" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -606,7 +641,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.facebook.com/share/18TqzfvGpm/" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -614,7 +649,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.facebook.com/share/189V3iDqsd/" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -622,7 +657,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.facebook.com/share/1HDYRJ63Lh/" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -630,7 +665,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.facebook.com/share/1NC9bcUAzq/" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -638,7 +673,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.facebook.com/share/18PubnbSH1/" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -646,7 +681,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.facebook.com/share/18U4JDXVSN/" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -654,7 +689,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.facebook.com/share/1GxgCBqSgg/" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -662,7 +697,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.facebook.com/share/17CVuBw3GD/" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -670,7 +705,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.facebook.com/share/1BYk3rZfqM/" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -678,7 +713,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.facebook.com/share/1DRsMuQWWH/" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -686,7 +721,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.facebook.com/share/18A6NsVh7f/" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -694,7 +729,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.facebook.com/share/1HcfmKy1RC/" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -702,7 +737,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.facebook.com/share/1Ay1XfjsyQ/" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -710,7 +745,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.facebook.com/share/1CBfYa2eJK/" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -718,7 +753,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.facebook.com/share/1GZJoT8cVn/" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -726,7 +761,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.facebook.com/share/1BAojX4obR/" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -734,7 +769,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.facebook.com/share/1BKT1yzcmc/" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -742,7 +777,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.facebook.com/share/1ACS3YVJEQ/" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -750,7 +785,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.facebook.com/share/1KyVf5ZB9E/" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -758,7 +793,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.facebook.com/share/1KccRAJAw9/" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -766,7 +801,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.facebook.com/share/1MvWTip74s/" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -774,7 +809,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.facebook.com/share/1AiZmukfPN/" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -782,7 +817,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.facebook.com/share/1BiN7YkVRk/" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -790,7 +825,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.facebook.com/share/1DBXp3QoND/" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -798,7 +833,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.facebook.com/share/17QXuDwNbk/" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -806,7 +841,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.facebook.com/share/19BCadujgY/" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -814,7 +849,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.facebook.com/share/16ZG7jG4Us/" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -822,7 +857,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.facebook.com/share/18XEZ5QWAr/" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -830,7 +865,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.instagram.com/driftcarzone1?igsh=aXVlYWh5d3lzZTd2" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -838,7 +873,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.facebook.com/share/1BPt2zBYr8/" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -846,7 +881,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.facebook.com/share/1DKzB4SwQM/" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -854,7 +889,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.facebook.com/share/1Np6H1MDXT/" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -862,7 +897,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.facebook.com/share/1CYeLfJJn9/" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -870,7 +905,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.facebook.com/share/15iq84XPQ6c/" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -878,7 +913,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.facebook.com/share/1C6q74K94i/" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -886,7 +921,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.facebook.com/share/185jLxAGvD/" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -894,7 +929,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.facebook.com/share/1CJJbc4mLo/" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -902,7 +937,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.facebook.com/share/1DiqrxDjP7/" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -910,7 +945,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.facebook.com/share/1B91HGcYmF/" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -918,20 +953,17 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                 </div>
-            </div>
-
-            <!-- Gulf Market -->
-            <div>
-                <div class="flex items-center gap-4 mb-10">
+                <!-- Gulf Market -->
+                <div class="flex items-center gap-[10px] md:gap-4 mb-[16px] md:mb-10 w-full mt-[32px] md:mt-20">
                     <div class="h-[1px] flex-grow bg-white/5"></div>
-                    <h4 class="text-xl font-bold text-[#ff9f4a] uppercase tracking-widest px-4">Gulf Market | سوق خليجي
+                    <h4 class="text-[15px] md:text-xl font-bold text-[#ff9f4a] uppercase tracking-wider px-[4px] text-center">Gulf Market | سوق خليجي
                     </h4>
                     <div class="h-[1px] flex-grow bg-white/5"></div>
                 </div>
                 <div
-                    class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6 md:gap-10">
+                    class="grid grid-cols-4 gap-[10px] sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 md:gap-10 w-full">
                     <a href="https://www.instagram.com/hashibasha?igsh=MWlvcWF6YnVuandjaQ==" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -939,7 +971,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.instagram.com/kummanah.sa?igsh=MWh1amU4YmU1NzZnZw==" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -947,7 +979,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.instagram.com/miskani_?igsh=M3VwMHUzdnBpM3Yz" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -955,7 +987,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.instagram.com/laderma.uae?igsh=ODV5OXplNG5jOG8z" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -963,7 +995,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.instagram.com/bliss.medicalcenter?igsh=MW50ZHc5eG5nMGJueA==" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -971,7 +1003,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.instagram.com/fujairah_chiropractic?igsh=Zjg2M3N6cjhvZzQ0" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -979,7 +1011,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.instagram.com/zaina.medical.center?igsh=MTI4MXAyaGxpZDRhNg==" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -987,7 +1019,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.instagram.com/dr.ayaali_?igsh=MTM5Y280dDRwZzVvMA==" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -995,7 +1027,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.instagram.com/aesthetica_uae?igsh=MWw1cG9wZXJxZnd1ZA==" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -1003,7 +1035,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.instagram.com/515clinic?igsh=MWxzangyYnF3aG9zcQ==" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -1011,7 +1043,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.instagram.com/515academy?igsh=OWZldGE4ODhjZjZr" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -1019,7 +1051,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.instagram.com/dr.haiman?igsh=Y2xxaXkwenBibG94" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -1027,7 +1059,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.instagram.com/dr.aljamali?igsh=c2l3NW1zaGV6ZjUy" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -1035,7 +1067,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.instagram.com/m.salah.psy?igsh=MTd4MWR6NDJoam5ndA==" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -1043,7 +1075,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.instagram.com/alishaheen2000?igsh=MXdwNmI2cGxyY2twaw=" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -1051,7 +1083,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.instagram.com/holisticuae?igsh=cnRzcXA0OGczcmVk" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -1059,7 +1091,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.instagram.com/dermabloommc?igsh=MTI2MTZvaTRrY3d5Zw==" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -1067,7 +1099,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.instagram.com/bloom.medical.rak?igsh=MTh3YzI1bXFtaXI0Mg==" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -1075,7 +1107,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.instagram.com/aga1group?igsh=ZWtlcjloM3RwYWtx" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -1083,7 +1115,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.instagram.com/anabtawisweets?igsh=Y3VsZzM3M25saDh4" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -1091,7 +1123,7 @@
                             class="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
                     </a>
                     <a href="https://www.instagram.com/uptownhome_?igsh=cjlnOG45bmdnNjV3" target="_blank"
-                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-4 transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
+                        class="group relative flex flex-col items-center justify-center aspect-square rounded-full border border-white/5 bg-zinc-900/40 p-[2px] md:p-4 w-full h-full transition-all duration-500 hover:border-primary/50 hover:bg-zinc-800/60 reveal reveal-zoom">
                         <div
                             class="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
                         </div>
@@ -1104,36 +1136,36 @@
     </section>
 
     <!-- Success Partners -->
-    <section class="py-20 bg-surface-container-low/30">
-        <div class="max-w-7xl mx-auto px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-xs font-black tracking-[0.4em] text-on-surface-variant mb-2 uppercase">Internships &
-                    Training</h2>
-                <p class="text-secondary-dim font-light">Practical experience at leading institutions.</p>
-            </div>
-            <div class="flex flex-wrap justify-center items-center gap-12 md:gap-20 opacity-60">
-                <div class="flex flex-col items-center gap-4 group">
-                    <div
-                        class="w-32 h-32 rounded-full flex items-center justify-center p-2 transition-all hover:scale-110 overflow-hidden">
-                        <img src="images/1.png" alt="Banque Misr" class="w-full h-full object-contain rounded-full">
-                    </div>
-                    <span
-                        class="text-xs uppercase tracking-widest text-zinc-500 font-bold group-hover:text-primary transition-colors">Banque
-                        Misr</span>
+    <!-- <section class="py-20 bg-surface-container-low/30">
+            <div class="max-w-7xl mx-auto px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-xs font-black tracking-[0.4em] text-on-surface-variant mb-2 uppercase">Internships &
+                        Training</h2>
+                    <p class="text-secondary-dim font-light">Practical experience at leading institutions.</p>
                 </div>
-                <div class="flex flex-col items-center gap-4 group">
-                    <div
-                        class="w-32 h-32 rounded-full flex items-center justify-center p-2 transition-all hover:scale-110 overflow-hidden">
-                        <img src="images/2.png" alt="Menofia University"
-                            class="w-full h-full object-contain rounded-full">
+                <div class="flex flex-wrap justify-center items-center gap-12 md:gap-20 opacity-60">
+                    <div class="flex flex-col items-center gap-4 group">
+                        <div
+                            class="w-32 h-32 rounded-full flex items-center justify-center p-2 transition-all hover:scale-110 overflow-hidden">
+                            <img src="images/1.png" alt="Banque Misr" class="w-full h-full object-contain rounded-full">
+                        </div>
+                        <span
+                            class="text-xs uppercase tracking-widest text-zinc-500 font-bold group-hover:text-primary transition-colors">Banque
+                            Misr</span>
                     </div>
-                    <span
-                        class="text-xs uppercase tracking-widest text-zinc-500 font-bold group-hover:text-primary transition-colors">Menofia
-                        University</span>
+                    <div class="flex flex-col items-center gap-4 group">
+                        <div
+                            class="w-32 h-32 rounded-full flex items-center justify-center p-2 transition-all hover:scale-110 overflow-hidden">
+                            <img src="images/2.png" alt="Menofia University"
+                                class="w-full h-full object-contain rounded-full">
+                        </div>
+                        <span
+                            class="text-xs uppercase tracking-widest text-zinc-500 font-bold group-hover:text-primary transition-colors">Menofia
+                            University</span>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section> -->
     <!-- Work Experience Section -->
     <section id="experience" class="py-16 md:py-24 px-4 md:px-8 bg-black reveal">
         <div class="max-w-7xl mx-auto">
@@ -1156,21 +1188,33 @@
                         class="bg-primary/10 text-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest border border-primary/20">Full-Time</span>
                 </div>
                 <ul class="space-y-6 text-zinc-400 text-lg">
-                    <li class="flex gap-4">
-                        <span class="material-symbols-outlined text-primary">check_circle</span>
+                    <li class="flex items-center gap-4">
+                        <div
+                            class="w-8 h-8 rounded-full bg-gradient-to-br from-orange-400 via-orange-500 to-orange-700 flex flex-col items-center justify-center shadow-[0_0_10px_rgba(255,159,74,0.5)] shrink-0">
+                            <span class="material-symbols-outlined text-white text-[16px]">check</span>
+                        </div>
                         <span>Social Media Content Creation & Copywriting for diverse digital platforms.</span>
                     </li>
-                    <li class="flex gap-4">
-                        <span class="material-symbols-outlined text-primary">check_circle</span>
+                    <li class="flex items-center gap-4">
+                        <div
+                            class="w-8 h-8 rounded-full bg-gradient-to-br from-orange-400 via-orange-500 to-orange-700 flex flex-col items-center justify-center shadow-[0_0_10px_rgba(255,159,74,0.5)] shrink-0">
+                            <span class="material-symbols-outlined text-white text-[16px]">check</span>
+                        </div>
                         <span>Manage company social media accounts including Facebook and Instagram
                             professionally.</span>
                     </li>
-                    <li class="flex gap-4">
-                        <span class="material-symbols-outlined text-primary">check_circle</span>
+                    <li class="flex items-center gap-4">
+                        <div
+                            class="w-8 h-8 rounded-full bg-gradient-to-br from-orange-400 via-orange-500 to-orange-700 flex flex-col items-center justify-center shadow-[0_0_10px_rgba(255,159,74,0.5)] shrink-0">
+                            <span class="material-symbols-outlined text-white text-[16px]">check</span>
+                        </div>
                         <span>Develop and implement comprehensive weekly and monthly content plans.</span>
                     </li>
-                    <li class="flex gap-4">
-                        <span class="material-symbols-outlined text-primary">check_circle</span>
+                    <li class="flex items-center gap-4">
+                        <div
+                            class="w-8 h-8 rounded-full bg-gradient-to-br from-orange-400 via-orange-500 to-orange-700 flex flex-col items-center justify-center shadow-[0_0_10px_rgba(255,159,74,0.5)] shrink-0">
+                            <span class="material-symbols-outlined text-white text-[16px]">check</span>
+                        </div>
                         <span>Monitor interactions, respond to followers, and analyze performance reports
                             regularly.</span>
                     </li>
@@ -1191,8 +1235,8 @@
                 <div
                     class="relative bg-zinc-900/60 border border-white/5 rounded-[2rem] p-10 flex flex-col md:flex-row gap-10 items-center overflow-hidden">
                     <div
-                        class="w-24 h-24 rounded-2xl bg-primary/10 flex items-center justify-center text-primary border border-primary/20 shrink-0">
-                        <span class="material-symbols-outlined text-5xl">school</span>
+                        class="w-20 h-20 md:w-24 md:h-24 rounded-full bg-gradient-to-br from-orange-400 via-orange-500 to-orange-700 flex flex-col items-center justify-center shadow-[0_0_20px_rgba(255,159,74,0.5)] shrink-0 transition-transform duration-300 hover:scale-105">
+                        <span class="material-symbols-outlined text-white text-4xl md:text-5xl">school</span>
                     </div>
                     <div class="flex-grow">
                         <div class="flex justify-between items-start mb-2">
@@ -1224,8 +1268,12 @@
                 <!-- Language Skills -->
                 <div
                     class="bg-zinc-900/40 border border-white/5 rounded-3xl p-8 hover:border-primary/30 transition-all group reveal reveal-left delay-100">
-                    <h3 class="text-white font-bold mb-8 flex items-center gap-3 text-xl">
-                        <span class="material-symbols-outlined text-primary">language</span> Language
+                    <h3 class="text-white font-bold mb-8 flex items-center gap-4 text-xl">
+                        <div
+                            class="w-10 h-10 rounded-full bg-gradient-to-br from-orange-400 via-orange-500 to-orange-700 flex items-center justify-center shadow-[0_0_15px_rgba(255,159,74,0.5)] shrink-0">
+                            <span class="material-symbols-outlined text-white text-xl">language</span>
+                        </div>
+                        Language
                     </h3>
                     <div class="space-y-6">
                         <div>
@@ -1252,8 +1300,12 @@
                 <!-- Computer Skills -->
                 <div
                     class="bg-zinc-900/40 border border-white/5 rounded-3xl p-8 hover:border-primary/30 transition-all group reveal reveal-up delay-200">
-                    <h3 class="text-white font-bold mb-8 flex items-center gap-3 text-xl">
-                        <span class="material-symbols-outlined text-primary">laptop_mac</span> Technical
+                    <h3 class="text-white font-bold mb-8 flex items-center gap-4 text-xl">
+                        <div
+                            class="w-10 h-10 rounded-full bg-gradient-to-br from-orange-400 via-orange-500 to-orange-700 flex items-center justify-center shadow-[0_0_15px_rgba(255,159,74,0.5)] shrink-0">
+                            <span class="material-symbols-outlined text-white text-xl">laptop_mac</span>
+                        </div>
+                        Technical
                     </h3>
                     <div class="space-y-4">
                         <div class="flex flex-wrap gap-2">
@@ -1276,8 +1328,12 @@
                 <!-- Personal Skills -->
                 <div
                     class="bg-zinc-900/40 border border-white/5 rounded-3xl p-8 hover:border-primary/30 transition-all group reveal reveal-right delay-300">
-                    <h3 class="text-white font-bold mb-8 flex items-center gap-3 text-xl">
-                        <span class="material-symbols-outlined text-primary">psychology</span> Soft Skills
+                    <h3 class="text-white font-bold mb-8 flex items-center gap-4 text-xl">
+                        <div
+                            class="w-10 h-10 rounded-full bg-gradient-to-br from-orange-400 via-orange-500 to-orange-700 flex items-center justify-center shadow-[0_0_15px_rgba(255,159,74,0.5)] shrink-0">
+                            <span class="material-symbols-outlined text-white text-xl">psychology</span>
+                        </div>
+                        Soft Skills
                     </h3>
                     <div class="grid grid-cols-2 gap-3">
                         <div
@@ -1307,32 +1363,44 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
                 <!-- Course 1 -->
                 <div class="bg-surface-container-high p-6 rounded-2xl border-l-4 border-primary">
-                    <div class="flex items-center gap-3 mb-4">
-                        <span class="material-symbols-outlined text-primary">school</span>
+                    <div class="flex items-center gap-4 mb-4">
+                        <div
+                            class="w-10 h-10 rounded-full bg-gradient-to-br from-orange-400 via-orange-500 to-orange-700 flex items-center justify-center shadow-[0_0_15px_rgba(255,159,74,0.5)] shrink-0">
+                            <span class="material-symbols-outlined text-white text-xl">school</span>
+                        </div>
                         <div class="font-bold text-sm">Financial Technology</div>
                     </div>
                     <p class="text-secondary text-xs italic">Menofia University (Nov 2021)</p>
                 </div>
                 <!-- Course 2 -->
                 <div class="bg-surface-container-high p-6 rounded-2xl border-l-4 border-primary">
-                    <div class="flex items-center gap-3 mb-4">
-                        <span class="material-symbols-outlined text-primary">analytics</span>
+                    <div class="flex items-center gap-4 mb-4">
+                        <div
+                            class="w-10 h-10 rounded-full bg-gradient-to-br from-orange-400 via-orange-500 to-orange-700 flex items-center justify-center shadow-[0_0_15px_rgba(255,159,74,0.5)] shrink-0">
+                            <span class="material-symbols-outlined text-white text-xl">analytics</span>
+                        </div>
                         <div class="font-bold text-sm">Business Model</div>
                     </div>
                     <p class="text-secondary text-xs italic">Egyptian Banking Institute (Oct 2023)</p>
                 </div>
                 <!-- Course 3 -->
                 <div class="bg-surface-container-high p-6 rounded-2xl border-l-4 border-primary">
-                    <div class="flex items-center gap-3 mb-4">
-                        <span class="material-symbols-outlined text-primary">badge</span>
+                    <div class="flex items-center gap-4 mb-4">
+                        <div
+                            class="w-10 h-10 rounded-full bg-gradient-to-br from-orange-400 via-orange-500 to-orange-700 flex items-center justify-center shadow-[0_0_15px_rgba(255,159,74,0.5)] shrink-0">
+                            <span class="material-symbols-outlined text-white text-xl">badge</span>
+                        </div>
                         <div class="font-bold text-sm">Career Preparation</div>
                     </div>
                     <p class="text-secondary text-xs italic">Soft Skills & Financial Inclusion (Nov 2023)</p>
                 </div>
                 <!-- Course 4 -->
                 <div class="bg-surface-container-high p-6 rounded-2xl border-l-4 border-primary">
-                    <div class="flex items-center gap-3 mb-4">
-                        <span class="material-symbols-outlined text-primary">trending_up</span>
+                    <div class="flex items-center gap-4 mb-4">
+                        <div
+                            class="w-10 h-10 rounded-full bg-gradient-to-br from-orange-400 via-orange-500 to-orange-700 flex items-center justify-center shadow-[0_0_15px_rgba(255,159,74,0.5)] shrink-0">
+                            <span class="material-symbols-outlined text-white text-xl">trending_up</span>
+                        </div>
                         <div class="font-bold text-sm">Sales & Marketing</div>
                     </div>
                     <p class="text-secondary text-xs italic">Online Certification (2024)</p>
@@ -1360,21 +1428,21 @@
                     <div class="flex gap-4">
                         <a href="https://www.instagram.com/2mera_ashraf?utm_source=qr&igsh=MjFhNGcxNWg1azNl"
                             target="_blank"
-                            class="w-10 h-10 rounded-full bg-zinc-900 border border-white/5 flex items-center justify-center hover:border-primary hover:text-primary transition-all text-zinc-400 group">
+                            class="w-10 h-10 rounded-full bg-gradient-to-br from-orange-400 via-orange-500 to-orange-700 shadow-[0_0_10px_rgba(255,159,74,0.5)] flex items-center justify-center text-white hover:scale-110 transition-transform duration-300 group">
                             <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
                                 <path
                                     d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.209-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
                             </svg>
                         </a>
                         <a href="https://www.facebook.com/share/1CNZv1QGXf/" target="_blank"
-                            class="w-10 h-10 rounded-full bg-zinc-900 border border-white/5 flex items-center justify-center hover:border-primary hover:text-primary transition-all text-zinc-400 group">
+                            class="w-10 h-10 rounded-full bg-gradient-to-br from-orange-400 via-orange-500 to-orange-700 shadow-[0_0_10px_rgba(255,159,74,0.5)] flex items-center justify-center text-white hover:scale-110 transition-transform duration-300 group">
                             <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
                                 <path
                                     d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
                             </svg>
                         </a>
                         <a href="https://www.tiktok.com/@amiraashraf912?_r=1&_t=ZS-94vrFMDwFQD" target="_blank"
-                            class="w-10 h-10 rounded-full bg-zinc-900 border border-white/5 flex items-center justify-center hover:border-primary hover:text-primary transition-all text-zinc-400 group">
+                            class="w-10 h-10 rounded-full bg-gradient-to-br from-orange-400 via-orange-500 to-orange-700 shadow-[0_0_10px_rgba(255,159,74,0.5)] flex items-center justify-center text-white hover:scale-110 transition-transform duration-300 group">
                             <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
                                 <path
                                     d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" />
@@ -1382,7 +1450,7 @@
                         </a>
                         <a href="https://www.linkedin.com/in/amira-ashraf-bb53b627b?utm_source=share_via&utm_content=profile&utm_medium=member_android"
                             target="_blank"
-                            class="w-10 h-10 rounded-full bg-zinc-900 border border-white/5 flex items-center justify-center hover:border-primary hover:text-primary transition-all text-zinc-400 group">
+                            class="w-10 h-10 rounded-full bg-gradient-to-br from-orange-400 via-orange-500 to-orange-700 shadow-[0_0_10px_rgba(255,159,74,0.5)] flex items-center justify-center text-white hover:scale-110 transition-transform duration-300 group">
                             <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
                                 <path
                                     d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
@@ -1405,16 +1473,25 @@
                 <div>
                     <h4 class="text-white font-black mb-8 uppercase text-xs tracking-[0.3em]">Contact</h4>
                     <ul class="space-y-6 text-sm text-zinc-500">
-                        <li class="flex items-start gap-4">
-                            <span class="material-symbols-outlined text-primary mt-1">location_on</span>
-                            <span>Birkat El Sabaa,<br>Menofia, Egypt</span>
+                        <li class="flex items-center gap-4">
+                            <div
+                                class="w-8 h-8 rounded-full bg-gradient-to-br from-orange-400 via-orange-500 to-orange-700 flex items-center justify-center shadow-[0_0_10px_rgba(255,159,74,0.5)] shrink-0">
+                                <span class="material-symbols-outlined text-white text-[16px]">location_on</span>
+                            </div>
+                            <span> Menofia, Egypt</span>
                         </li>
                         <li class="flex items-center gap-4">
-                            <span class="material-symbols-outlined text-primary">call</span>
+                            <div
+                                class="w-8 h-8 rounded-full bg-gradient-to-br from-orange-400 via-orange-500 to-orange-700 flex items-center justify-center shadow-[0_0_10px_rgba(255,159,74,0.5)] shrink-0">
+                                <span class="material-symbols-outlined text-white text-[16px]">call</span>
+                            </div>
                             <span>01144266808</span>
                         </li>
                         <li class="flex items-center gap-4">
-                            <span class="material-symbols-outlined text-primary">mail</span>
+                            <div
+                                class="w-8 h-8 rounded-full bg-gradient-to-br from-orange-400 via-orange-500 to-orange-700 flex items-center justify-center shadow-[0_0_10px_rgba(255,159,74,0.5)] shrink-0">
+                                <span class="material-symbols-outlined text-white text-[16px]">mail</span>
+                            </div>
                             <span>Amiraxashraf1012@gmail.com</span>
                         </li>
                     </ul>
@@ -1437,8 +1514,10 @@
                 <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
                     class="flex items-center gap-3 text-xs font-black uppercase tracking-widest text-zinc-400 hover:text-white transition-all group">
                     Back to top
-                    <span
-                        class="material-symbols-outlined text-primary group-hover:-translate-y-1 transition-transform">arrow_upward</span>
+                    <div
+                        class="w-8 h-8 rounded-full bg-gradient-to-br from-orange-400 via-orange-500 to-orange-700 flex flex-col items-center justify-center shadow-[0_0_10px_rgba(255,159,74,0.5)] shrink-0 group-hover:-translate-y-1 transition-transform">
+                        <span class="material-symbols-outlined text-white text-sm">arrow_upward</span>
+                    </div>
                 </button>
             </div>
         </div>
@@ -1446,6 +1525,67 @@
 
     <!-- Scripts for Animations & Mobile Menu -->
     <script>
+        // Hero Typewriter Effect
+        document.addEventListener("DOMContentLoaded", () => {
+            const typeHeroText = (element, delay, speed = 80, isTitle = false) => {
+                if (!element) return;
+                const text = element.textContent.trim();
+                // Preserve exact element height to prevent layout shifts
+                const computedHeight = window.getComputedStyle(element).height;
+                element.style.minHeight = computedHeight;
+                
+                setTimeout(() => {
+                    element.innerHTML = '';
+                    element.classList.remove('opacity-0');
+                    
+                    const cursor = document.createElement('span');
+                    // Dynamic cursor sizing based on if it's the giant title or subtitle
+                    cursor.className = `inline-block bg-[#ff9f4a] animate-pulse ml-2 align-middle translate-y-[-2px] ${isTitle ? 'w-[6px] md:w-[10px] h-[0.8em]' : 'w-[3px] md:w-[5px] h-[0.9em]'}`;
+                    element.appendChild(cursor);
+
+                    let i = 0;
+                    const typing = setInterval(() => {
+                        if (i < text.length) {
+                            cursor.insertAdjacentText('beforebegin', text.charAt(i));
+                            i++;
+                        } else {
+                            clearInterval(typing);
+                            // Cursor disappears gracefully after a few blinks
+                            setTimeout(() => {
+                                cursor.style.transition = 'opacity 0.5s ease-out';
+                                cursor.style.opacity = '0';
+                                setTimeout(() => cursor.remove(), 500);
+                            }, 1200);
+                        }
+                    }, speed);
+                }, delay);
+            };
+
+            const heroTitle = document.getElementById('hero-title');
+            const heroSubtitle = document.getElementById('hero-subtitle');
+            
+            // Sequence the animations perfectly
+            typeHeroText(heroTitle, 300, 100, true);
+            // 300ms delay + (12 chars * 100ms) = 1500ms. Give it a tiny pause before subtitle.
+            typeHeroText(heroSubtitle, 1800, 50, false);
+            
+            // Reveal CV Button & Social Icons gracefully sequentially after typing ends (at ~4.5 seconds)
+            const heroCVBtn = document.getElementById('hero-cv-btn');
+            const heroSocialIcons = document.querySelectorAll('.hero-social-icon');
+            
+            if (heroCVBtn) {
+                setTimeout(() => {
+                    heroCVBtn.classList.remove('opacity-0', 'scale-50', 'translate-y-4');
+                }, 4300);
+            }
+            
+            heroSocialIcons.forEach((icon, idx) => {
+                setTimeout(() => {
+                    icon.classList.remove('opacity-0', 'scale-50', 'translate-y-4');
+                }, 4600 + (idx * 200));
+            });
+        });
+
         // Mobile Menu Toggling
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const closeMenuBtn = document.getElementById('close-menu-btn');
